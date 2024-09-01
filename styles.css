@@ -120,9 +120,9 @@ body {
   .our-services-title {
     width: 100%;
     align-self: flex-start;
-    padding-left: 21px;
+    padding-left: 21px; /* Using padding instead of margin here is best, because if I use margin, the title which takes 100% width will overflow outside of the parent element and the horizontal scroll will appear */
     margin-top: 43px;
-    margin-bottom: 15px;
+    margin-bottom: 31px;
     font-size: 22px;
   }
 
@@ -157,6 +157,7 @@ body {
   .service-links {
     display: flex;
     align-items: center;
+    margin-top: 10px;
   }
 
   .service-link {
@@ -181,7 +182,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 25%;
+    top: 32%;
     left: 9.5%;
     font-family: "Open sans", sans-serif;
     font-size: 18px;
@@ -190,14 +191,14 @@ body {
   }
 
   .call-to-action-paragraph {
-    width: 80%;
+    width: 77%;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 11%;
     font-family: "Open sans", sans-serif;
     font-size: 13px;
@@ -209,12 +210,103 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 70%;
+    top: 68%;
     left: 35%;
+    width: 30%; /* This makes the button stay in the center, no matter what the dimensions of the screen are */
   }
 
   .leaves-image {
     width: 100%;
-    height: 306px;
+    height: auto;
+    display: block; /* This eliminates any potential whitespace below the "leaves-image" that could be added by the browser’s default image styling */
+  }
+
+  /* Footer section */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00242e;
+  }
+
+  .footer-logo {
+    width: 108px;
+    height: 71px;
+    margin-top: 40px;
+  }
+
+  .horizontal-line {
+    width: 70%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .instagram-img,
+  .twitter-img,
+  .linkedin-img {
+    width: 15px;
+    height: 15px;
+    position: relative;
+  }
+
+  .instagram-link,
+  .twitter-link,
+  .linkedin-link {
+    font-family: "Open sans", sans-serif;
+    font-size: 13px;
+    position: absolute;
+    margin-left: 5px;
+  }
+
+  .follow-us {
+    color: white;
+    font-family: "Open sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 70%;
+    padding-left: 2px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+  }
+
+  .company,
+  .our-solutions {
+    color: white;
+    font-family: "Open sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 70%;
+    padding-left: 2px;
+    margin-bottom: 4px;
+    margin-top: 25px;
+  }
+
+  .socials,
+  .blog-and-news,
+  .services,
+  .about-us,
+  .international-airport,
+  .bali-solar-farm,
+  .manufacturing-plant {
+    width: 70%;
+    font-size: 13px;
+    margin-top: 9px;
+    padding-left: 3px;
+  }
+
+  .international-airport,
+  .bali-solar-farm,
+  .manufacturing-plant {
+    font-style: italic;
+  }
+
+  .copyright {
+    width: 60%;
+    color: white;
+    font-family: "Open sans", sans-serif;
+    font-size: 9px;
+    margin-top: 90px;
+    margin-bottom: 5px;
   }
 }
