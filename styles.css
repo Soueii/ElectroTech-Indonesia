@@ -77,7 +77,7 @@ body {
     font-size: 22px;
     margin-left: 21px;
     margin-top: 32px;
-    margin-bottom: 0px;
+    margin-bottom: 17px;
     align-self: flex-start; /* using this so that it doesn't get affected by justify-content and align-items: center on the parent element */
   }
 
