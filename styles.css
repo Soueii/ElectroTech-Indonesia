@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* This is used with padding only, it doesn't work with margin */
+  font-family: "Open sans", sans-serif;
 }
 
 body {
@@ -506,5 +507,59 @@ body {
     font-weight: 700;
     margin-top: 90px;
     margin-bottom: 5px;
+  }
+
+  /* --------------ABOUT US PAGE-------------- */
+
+  .about-us-hero {
+    background-color: #00242e;
+    width: 100%;
+    /* height: 852px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 212px;
+  }
+
+  .text-and-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .about-us-small-heading {
+    color: white;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 1rem; /* Added margin for spacing */
+  }
+
+  .about-us-big-heading {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 2rem; /* Added margin for spacing */
+  }
+
+  .about-us-img {
+    width: 371px;
+    height: 230px;
+    border-radius: 28px;
+  }
+
+  .about-us-hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
