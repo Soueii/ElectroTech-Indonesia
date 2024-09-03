@@ -67,7 +67,8 @@ body {
     cursor: pointer;
   }
 
-  span {
+  /* Update the selectors to target .hamburger-span instead of span */
+  .hamburger-span {
     display: block;
     width: 100%;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
@@ -78,34 +79,38 @@ body {
     position: relative;
   }
 
-  span + span {
+  .hamburger-span + .hamburger-span {
     margin-top: 4px;
   }
 
-  .btn.active span:nth-child(1) {
+  /* Animations for the first span (top line) */
+  .btn.active .hamburger-span:nth-child(1) {
     animation: top 0.7s ease forwards;
   }
 
-  span:nth-child(1) {
+  .hamburger-span:nth-child(1) {
     animation: top-2 0.7s ease forwards;
   }
 
-  .btn.active span:nth-child(2) {
+  /* Animations for the second span (middle line) */
+  .btn.active .hamburger-span:nth-child(2) {
     animation: scaled 0.7s ease forwards;
   }
 
-  span:nth-child(2) {
+  .hamburger-span:nth-child(2) {
     animation: scaled-2 0.7s ease forwards;
   }
 
-  .btn.active span:nth-child(3) {
+  /* Animations for the third span (bottom line) */
+  .btn.active .hamburger-span:nth-child(3) {
     animation: bottom 0.7s ease forwards;
   }
 
-  span:nth-child(3) {
+  .hamburger-span:nth-child(3) {
     animation: bottom-2 0.7s ease forwards;
   }
 
+  /* Keyframes remain the same */
   @keyframes top {
     0% {
       top: 0;
@@ -191,6 +196,7 @@ body {
     }
   }
 
+  /* Your menu list styles remain the same */
   .menu-list {
     list-style: none;
     position: absolute;
@@ -541,19 +547,20 @@ body {
     color: white;
     font-size: 18px;
     font-style: italic;
-    margin-bottom: 1rem; /* Added margin for spacing */
+    margin-bottom: 2rem;
   }
 
   .about-us-big-heading {
     color: white;
     font-size: 35px;
-    margin-bottom: 2rem; /* Added margin for spacing */
+    margin-bottom: 2rem;
   }
 
   .about-us-img {
     width: 371px;
     height: 230px;
     border-radius: 28px;
+    margin-bottom: 4%;
   }
 
   .about-us-hero-img {
@@ -561,5 +568,45 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+
+  /* History section */
+
+  .history-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5%;
+  }
+
+  .history-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .history-paragraph {
+    padding: 5% 7%;
+    font-size: 13px;
+  }
+
+  .history-milestones {
+    font-size: 13px;
+    padding: 0% 7% 5% 7%;
+  }
+
+  .history-years li {
+    font-size: 13px;
+    /* list-style-type: circle  */ /* Doesn't show because of the 7% padding below */
+    padding: 0 7%;
+  }
+
+  .bold-years {
+    font-weight: bold;
+  }
+
+  .bold-years-last {
+    margin-bottom: 7%;
   }
 }
