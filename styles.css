@@ -506,6 +506,8 @@ body {
   }
 
   .copyright {
+    display: flex;
+    justify-content: center;
     width: 60%;
     color: white;
     font-family: "Open sans", sans-serif;
@@ -616,5 +618,64 @@ body {
     background-color: #00242e;
     display: flex;
     flex-direction: column;
+    padding: 0 3.3rem;
+  }
+
+  .leadership-heading {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 1.8rem 0;
+  }
+
+  .ceo-name,
+  .cto-name,
+  .head-of-energy-name {
+    font-size: 1.75rem;
+    margin-top: 1.75rem;
+    color: white;
+  }
+
+  .ceo-position,
+  .cto-position,
+  .head-of-energy-position {
+    font-size: 1.125rem;
+    margin-top: 2.4rem;
+    color: white;
+  }
+
+  .ceo-paragraph,
+  .cto-paragraph,
+  .head-of-energy-paragraph {
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1.8rem;
+    color: white;
+  }
+
+  /* I don't like the height of the CTO image, but I'll leave it like that for now */
+  .cto-image,
+  .head-of-energy-image {
+    margin-top: 2rem;
+  }
+
+  .quote-image {
+    width: 100%;
+    height: 44px;
+    margin-top: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .quote-paragraph {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 1.8rem;
+    color: white;
+  }
+
+  .quote-horizontal-line {
+    margin: 0 -3.3rem; /* ignores the 3.3rem padding on the parent element */
   }
 }
