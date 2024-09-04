@@ -268,7 +268,8 @@ body {
 
   /* Our Mission section */
 
-  .our-mission {
+  .our-mission,
+  .our-services-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -276,8 +277,8 @@ body {
     margin-bottom: 40px;
   }
 
-  .our-mission-title {
-    font-family: "Open Sans", sans-serif;
+  .our-mission-title,
+  .our-services-heading {
     font-size: 22px;
     margin-left: 21px;
     margin-top: 32px;
@@ -519,10 +520,9 @@ body {
 
   /* --------------ABOUT US PAGE-------------- */
 
-  .about-us-hero {
+  .hero {
     background-color: #00242e;
     width: 100%;
-    /* height: 852px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -545,20 +545,21 @@ body {
     width: 80%;
   }
 
-  .about-us-small-heading {
+  .hero-small-heading {
     color: white;
     font-size: 18px;
     font-style: italic;
     margin-bottom: 2rem;
   }
 
-  .about-us-big-heading {
+  .hero-big-heading {
     color: white;
     font-size: 35px;
+    font-weight: 500;
     margin-bottom: 2rem;
   }
 
-  .about-us-img {
+  .hero-img {
     width: 371px;
     height: 230px;
     border-radius: 28px;
@@ -677,5 +678,31 @@ body {
 
   .quote-horizontal-line {
     margin: 0 -3.3rem; /* ignores the 3.3rem padding on the parent element */
+  }
+
+  /* ---------------SERVICES PAGE--------------- */
+
+  .our-services-main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1.3rem;
+  }
+
+  .design-and-installations-img {
+    height: 240px;
+    border-radius: 13px;
+  }
+
+  .service-name {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 750;
+    margin-top: 0.87rem;
+  }
+
+  .service-paragraph {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
   }
 }
