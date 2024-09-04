@@ -277,8 +277,7 @@ body {
     margin-bottom: 40px;
   }
 
-  .our-mission-title,
-  .our-services-heading {
+  .our-mission-title {
     font-size: 22px;
     margin-left: 21px;
     margin-top: 32px;
@@ -681,6 +680,12 @@ body {
   }
 
   /* ---------------SERVICES PAGE--------------- */
+
+  .our-services-heading {
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 17px;
+  }
 
   .our-services-main-content {
     display: flex;
