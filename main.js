@@ -20,3 +20,33 @@ btn.addEventListener("click", function () {
     menuList.classList.add("show");
   }
 });
+
+// Accordion
+
+const accordions = document.querySelectorAll(".accordion");
+
+const openAccordion = (accordion) => {
+  const content = accordion.querySelector(".accordion__content");
+  accordion.classList.add("accordion__active");
+  content.style.maxHeight = content.scrollHeight + "px"; // the content.scrollHeight + "px" basically computates a value and returns an integer number, and adds a "px" at the end, since maxHeight requires a value in px.
+};
+
+const closeAccordion = (accordion) => {
+  const content = accordion.querySelector(".accordion__content");
+  accordion.classList.remove("accordion__active");
+  content.style.maxHeight = null;
+};
+
+accordions.forEach((accordion) => {
+  const intro = accordion.querySelector(".accordion__intro");
+  const content = accordion.querySelector(".accordion__content");
+
+  intro.onclick = () => {
+    if (content.style.maxHeight) {
+      closeAccordion(accordion);
+    } else {
+      accordions.forEach((accordion) => closeAccordion(accordion));
+      openAccordion(accordion);
+    }
+  };
+});

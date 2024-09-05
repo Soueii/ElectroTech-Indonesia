@@ -565,7 +565,7 @@ body {
     margin-bottom: 4%;
   }
 
-  .about-us-hero-img {
+  .hero-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -709,5 +709,46 @@ body {
   .service-paragraph {
     font-size: 0.8rem;
     margin-top: 0.5rem;
+  }
+
+  /* Accordion */
+
+  .accordion {
+    width: 60%;
+    max-width: none;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #00242e;
+    border-radius: 16px;
+  }
+
+  .accordion__intro {
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .accordion__content {
+    font-size: 13px;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.25s ease-out;
+    color: #f1f1f1;
+    opacity: 0;
+  }
+
+  .accordion__active .accordion__content {
+    padding: 0 20px 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+
+  h4 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
   }
 }
