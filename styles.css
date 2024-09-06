@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box; /* This is used with padding only, it doesn't work with margin */
   font-family: "Open sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,12 +19,12 @@ body {
 
   /* Hero Section */
 
-  .hero-container {
+  /* .hero-container {
     display: flex;
     position: relative;
     width: 100%;
     height: 100vh;
-  }
+  } */
 
   .hero-image {
     width: 100%;
@@ -562,7 +563,7 @@ body {
     width: 371px;
     height: 230px;
     border-radius: 28px;
-    margin-bottom: 4%;
+    /* margin-bottom: 4%; */
   }
 
   .hero-img-container {
