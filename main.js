@@ -1,3 +1,5 @@
+// Menu animation button
+
 let btn = document.querySelector(".btn");
 
 btn.addEventListener("click", function () {
@@ -45,7 +47,7 @@ accordions.forEach((accordion) => {
     if (content.style.maxHeight) {
       closeAccordion(accordion);
     } else {
-      accordions.forEach((accordion) => closeAccordion(accordion));
+      accordions.forEach((accordion) => closeAccordion(accordion)); // Closes all currently opened accordions and opens only 1 at a time
       openAccordion(accordion);
     }
   };

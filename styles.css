@@ -694,7 +694,7 @@ body {
     padding: 0 1.3rem;
   }
 
-  .design-and-installations-img {
+  .service-images {
     height: 240px;
     border-radius: 13px;
   }
@@ -718,7 +718,6 @@ body {
     max-width: none;
     overflow: hidden;
     margin-top: 20px;
-    margin-left: 20px;
     background-color: #00242e;
     border-radius: 16px;
   }
@@ -750,5 +749,21 @@ body {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
+  }
+
+  .the-services {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 1.3rem 0;
+  }
+
+  .link-service {
+    color: black;
+    margin-left: 3px;
+    font-size: 13px;
+  }
+
+  .object-fit-image {
+    object-fit: cover;
   }
 }
