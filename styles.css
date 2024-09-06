@@ -19,6 +19,16 @@ body {
 
   /* Hero Section */
 
+  .hero-container {
+    position: relative; /* Ensure this container can be the reference point for absolute positioning */
+    width: 100%;
+    height: 100vh;
+  }
+
+  .about-us-hero-container {
+    width: 100%;
+  }
+
   .hero-image {
     width: 100%;
     height: 100vh;
@@ -190,7 +200,6 @@ body {
     }
   }
 
-  /* Your menu list styles remain the same */
   .menu-list {
     list-style: none;
     position: absolute;
@@ -244,20 +253,19 @@ body {
   /* Hamburger Menu ends here */
 
   .hero-paragraph {
-    margin: 0 30px;
+    position: absolute; /* Position this element absolutely within its relative container */
+    top: 43%;
+    left: 7%;
     color: white;
-    font-family: "Open Sans", sans-serif;
     font-size: 35px;
     letter-spacing: 2.5px;
-    position: absolute; /* moves it into the hero image this way, since I've got position: relative on the parent */
-    bottom: 40%;
-    width: 20px; /* to make it so that the words are one under another */
   }
 
   .scroll-down-icon {
-    position: absolute;
+    position: absolute; /* Position this element absolutely within its relative container */
     bottom: 2%;
     left: 50%;
+    transform: translateX(-50%); /* Center the element horizontally */
   }
 
   /* Our Mission section */
@@ -515,14 +523,13 @@ body {
 
   .hero {
     background-color: #00242e;
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 13.25rem 1.3rem 1rem 1.3rem;
+    padding: 13rem 1.3rem 1rem 1.3rem;
   }
 
   .text-and-image {
@@ -557,7 +564,7 @@ body {
     width: 100%;
     height: 230px;
     border-radius: 28px;
-    /* margin-bottom: 5%; */
+    /* margin-bottom: 4%; */
   }
 
   .hero-img-container {
