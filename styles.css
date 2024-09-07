@@ -540,7 +540,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 78%;
   }
 
   .hero-small-heading {
@@ -552,7 +552,7 @@ body {
 
   .hero-big-heading {
     color: white;
-    font-size: 35px;
+    font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 2rem;
   }
@@ -678,7 +678,7 @@ body {
     margin: 0 -3.3rem; /* ignores the 3.3rem padding on the parent element */
   }
 
-  /* ---------------SERVICES PAGE--------------- */
+  /* ----------------------------SERVICES PAGE---------------------------- */
 
   .our-services-heading {
     font-size: 22px;
@@ -764,5 +764,18 @@ body {
 
   .object-fit-image {
     object-fit: cover;
+  }
+
+  /* ----------------------------PROJECTS PAGE---------------------------- */
+
+  .our-projects-main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our-projects-heading {
+    font-size: 22px;
+    margin: 22px 0;
+    text-align: center;
   }
 }
