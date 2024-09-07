@@ -506,7 +506,7 @@ body {
   .copyright {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     color: white;
     font-family: "Open sans", sans-serif;
     font-size: 9px;
@@ -540,6 +540,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     width: 78%;
   }
 
@@ -561,6 +562,7 @@ body {
     width: 100%;
     height: 230px;
     border-radius: 28px;
+    object-fit: cover;
     /* margin-bottom: 4%; */
   }
 
@@ -696,6 +698,7 @@ body {
   .service-images {
     height: 240px;
     border-radius: 13px;
+    object-fit: cover;
   }
 
   .service-name {
@@ -764,6 +767,12 @@ body {
 
   .object-fit-image {
     object-fit: cover;
+    object-position: 20% 33%;
+  }
+
+  .object-fit-image-consulting {
+    object-fit: cover;
+    object-position: 20% 53%;
   }
 
   /* ----------------------------PROJECTS PAGE---------------------------- */
