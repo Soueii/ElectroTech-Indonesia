@@ -82,7 +82,7 @@ const JSCarousel = ({
 
   // If no slides are found, log an error and exit.
   if (!slides.length) {
-    console.error("Specify a valid selector for slides.");
+    console.error("Specify a valid selector for the slides.");
     return null;
   }
 
@@ -170,20 +170,17 @@ const JSCarousel = ({
       carousel.appendChild(paginationContainer);
     }
 
-    /*
-     * Set initial alignment styles for the slides, inject pagination
-     * buttons, and attach event listeners to them.
-     */
+    // Set initial alignment styles for the slides, inject pagination buttons, and attach event listeners to them.
     slides.forEach((slide, index) => {
-      slide.style.transform = `translateX(${index * 100}%)`;
+      slide.style.transform = `translateX(${index * 100}%)`; // Sets the transform property for each slide to position them horizontally, i.e. 0 * 100 = 0% (1st slide), 1 * 100 = 100% (2nd slide), etc.
       if (enablePagination) {
         const paginationBtn = addElement(
           "btn",
           {
-            class: `carousel-btn caroursel-btn--${index + 1}`,
+            class: `carousel-btn carousel-btn--${index + 1}`,
             role: "tab",
           },
-          `${index + 1}`
+          `${index + 1}` // gives "1", "2" and "3" as a text value of the <btn> element
         );
 
         paginationContainer.appendChild(paginationBtn);
@@ -203,14 +200,11 @@ const JSCarousel = ({
   // Adjust slide positions according to the currently selected slide.
   const adjustSlidePosition = () => {
     slides.forEach((slide, i) => {
-      slide.style.transform = `translateX(${100 * (i - currentSlideIndex)}%)`;
+      slide.style.transform = `translateX(${100 * (i - currentSlideIndex)}%)`; // essentially what happens here is 1 - 0, 2 - 0 and 3 - 0, * 100% (so 0%, 100%, 200% value for translateX)
     });
   };
 
-  /*
-   * Update the state of pagination buttons according to the currently
-   * selected slide.
-   */
+  // Update the state of pagination buttons according to the currently selected slide.
   const updatePaginationBtns = () => {
     const paginationBtns = paginationContainer.children;
     const prevActiveBtns = Array.from(paginationBtns).filter((btn) =>
@@ -241,7 +235,7 @@ const JSCarousel = ({
     const newSlideIndex =
       direction === "next"
         ? (currentSlideIndex + 1) % slides.length
-        : (currentSlideIndex - 1 + slides.length) % slides.length;
+        : (currentSlideIndex - 1 + slides.length) % slides.length; // the '+ slides.length' ensures that the result is positive and the '% slides.length' wraps around to the last slide
     currentSlideIndex = newSlideIndex;
     updateCarouselState();
   };
@@ -297,3 +291,5 @@ carousel1.create();
 window.addEventListener("unload", () => {
   carousel1.destroy();
 });
+
+// END OF CAROUSEL
