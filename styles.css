@@ -519,7 +519,7 @@ body {
 
   .hero {
     background-color: #00242e;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -815,9 +815,9 @@ body {
 
   .quote-container {
     position: relative;
-    max-width: 90%; /* Adjust as necessary for responsiveness */
-    margin: 0 auto; /* Center the container */
-    padding: 0 5vw; /* Add padding to make space for the quotes */
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 5vw;
   }
 
   .client-paragraph {
