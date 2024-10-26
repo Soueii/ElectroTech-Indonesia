@@ -844,4 +844,73 @@ body {
     width: 4vw;
     height: auto;
   }
+
+  /* CONTACT US PAGE */
+
+  .contact-us {
+    font-size: 28px;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  /* Center the form container in the middle of the screen */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  /* Style the form to make inputs stack vertically and center-align */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  /* Style each input field and the submit button */
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea,
+  .form input[type="submit"] {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 20px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    border-radius: 13px;
+    box-sizing: border-box;
+  }
+
+  .form input[type="submit"] {
+    padding: 12px;
+  }
+
+  .form input[type="submit"] {
+    background-color: #1f3144;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .address {
+    margin-left: 38px;
+  }
+
+  .office-location-text {
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .email {
+    color: #1f3144;
+  }
 }

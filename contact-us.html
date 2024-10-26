@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact page</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div>
+        <a href="index.html">
+          <img
+            src="./images/Logo/png/logo-no-background.png"
+            alt="logo-no-background"
+            class="logo"
+          />
+        </a>
+      </div>
+      <!-- Hamburger Menu -->
+      <div class="box">
+        <div class="btn">
+          <span class="hamburger-span"></span>
+          <span class="hamburger-span"></span>
+          <span class="hamburger-span"></span>
+        </div>
+      </div>
+      <ul class="menu-list">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li>
+          <a href="">Blog and News</a>
+        </li>
+        <li>
+          <a href="about-us.html">About us</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+      <!-- Hamburger Menu END -->
+      <div class="text-and-image">
+        <div class="headings">
+          <p class="hero-small-heading">Contact us</p>
+          <div class="empty-space"></div>
+          <p class="hero-big-heading">We're here for you</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <p class="contact-us">Contact us</p>
+
+    <div class="form-container">
+      <form action="/check" method="POST" class="form">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter name"
+          required
+        />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="E-mail"
+          required
+        />
+        <textarea
+          name="comment"
+          form="usrform"
+          placeholder="Message"
+        ></textarea>
+        <input type="submit" value="Contact us" />
+      </form>
+    </div>
+
+    <div class="address">
+      <p class="office-location-text">Office location</p>
+      <address>
+        Jl. Jend. Sudirman No. 23,
+        <br />
+        Kawasan Mega Kuningan,
+        <br />
+        Jakarta Selatan, 12950,
+        <br />
+        Indonesia
+      </address>
+      <br />
+      <p>+62 21 1234 5678</p>
+      <a href="mailto:info@electrotech.co.id" class="email">
+        info@electrotech.co.id
+      </a>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
