@@ -293,3 +293,15 @@ window.addEventListener("unload", () => {
 });
 
 // END OF CAROUSEL
+
+// Puts '...' after a certain character length
+document.addEventListener("DOMContentLoaded", function () {
+  const descriptionElement = document.getElementById("description");
+  const maxLength = 30;
+
+  let fullText = descriptionElement.textContent;
+
+  if (fullText.length > maxLength) {
+    descriptionElement.textContent = fullText.substring(0, maxLength) + "...";
+  }
+});
