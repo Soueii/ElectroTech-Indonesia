@@ -868,7 +868,7 @@ body {
     align-items: center;
     width: 90%;
     max-width: 400px;
-    padding: 20px;
+    padding: 5px 20px 20px 20px;
   }
 
   /* Style each input field and the submit button */
@@ -902,15 +902,35 @@ body {
   }
 
   .address {
-    margin-left: 38px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
 
   .office-location-text {
     font-weight: 800;
     font-size: 20px;
+    width: 69%;
+    margin: 0 auto;
   }
 
   .email {
     color: #1f3144;
+  }
+
+  .map-container {
+    width: 340px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+
+  iframe {
+    width: 100%;
   }
 }
