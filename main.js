@@ -1,3 +1,25 @@
+// Menu
+
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("show");
+}
+
+document.addEventListener("click", function (event) {
+  const menu = document.getElementById("menu");
+  const hamburger = document.querySelector(".hamburger");
+
+  if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+    menu.classList.remove("show");
+  }
+});
+
+document.querySelectorAll(".menu a").forEach((item) => {
+  item.addEventListener("click", () => {
+    document.getElementById("menu").classList.remove("show");
+  });
+});
+
 // Accordion
 
 const accordions = document.querySelectorAll(".accordion");

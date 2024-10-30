@@ -25,48 +25,24 @@
         </a>
       </div>
 
-      <div class="container">
-        <div class="phone">
-          <div class="content">
-            <nav role="navigation">
-              <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                  <li>
-                    <a href="services.html" class="href-menu-elements">
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a href="projects.html" class="href-menu-elements">
-                      Projects
-                    </a>
-                  </li>
-                  <li>
-                    <a href="blog-and-news.html" class="href-menu-elements">
-                      Blog and News
-                    </a>
-                  </li>
-                  <li>
-                    <a href="about-us.html" class="href-menu-elements">
-                      About us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="contact-us.html" class="href-menu-elements">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
+      <!-- Hamburger menu -->
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-      <!-- Hamburger Menu END -->
+      <nav class="menu" id="menu">
+        <button class="close-btn" onclick="toggleMenu()">X</button>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog-and-news.html">Blog and News</a>
+        <a href="about-us.html">About us</a>
+        <a href="contact-us.html">Contact</a>
+      </nav>
+
+      <!-- Hamburger menu END -->
+
       <div class="text-and-image">
         <div class="headings">
           <p class="hero-small-heading">About ElectroTech</p>
@@ -74,7 +50,11 @@
           <p class="hero-big-heading">Changing the way Indonesia is powered</p>
         </div>
         <div class="about-us-hero-img">
-          <img src="images/About-us.jpg" alt="about-us" class="hero-img" />
+          <img
+            src="images/About-us.jpg"
+            alt="about-us"
+            class="hero-img-about-us"
+          />
         </div>
       </div>
     </div>

@@ -9,42 +9,45 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="test.css" />
     <title>ElectroTech Homepage</title>
   </head>
   <body>
-    <!-- I tried using the SVG logo, but only the text from the alt attribute appeared for some reason -->
     <!--Hero section-->
-    <div class="hero-container">
-      <img
-        src="./images/Hero-Picture.jpg"
-        alt="Hero-section-picture"
-        class="hero-image"
-      />
-      <a href="index.html">
+    <div class="hero">
+      <div class="main-menu-container">
         <img
-          src="./images/Logo/png/logo-no-background.png"
-          alt="logo-no-background"
-          class="logo"
+          src="./images/Hero-Picture.jpg"
+          alt="Hero-section-picture"
+          class="hero-image"
         />
-      </a>
 
-      <!-- Hamburger Menu -->
-      <div class="box">
-        <div class="btn">
-          <span class="hamburger-span"></span>
-          <span class="hamburger-span"></span>
-          <span class="hamburger-span"></span>
-        </div>
+        <a href="index.html">
+          <img
+            src="./images/Logo/png/logo-no-background.png"
+            alt="logo-no-background"
+            class="logo"
+          />
+        </a>
       </div>
-      <ul class="menu-list">
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="blog-and-news.html">Blog and News</a></li>
-        <li><a href="about-us.html">About us</a></li>
-        <li><a href="contact-us.html">Contact</a></li>
-      </ul>
-      <!-- Hamburger Menu END -->
+
+      <!-- Hamburger menu -->
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="menu" id="menu">
+        <button class="close-btn" onclick="toggleMenu()">X</button>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog-and-news.html">Blog and News</a>
+        <a href="about-us.html">About us</a>
+        <a href="contact-us.html">Contact</a>
+      </nav>
+
+      <!-- Hamburger menu END -->
 
       <p class="hero-paragraph">
         Leading
