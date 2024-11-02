@@ -160,6 +160,12 @@ body {
     box-shadow: 2px 5px 10px; /* will change that later for sure */
   }
 
+  .title-and-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* Our Services section */
 
   .our-services {
@@ -269,7 +275,33 @@ body {
     position: absolute;
     top: 68%;
     left: 35%;
-    width: 30%; /* This makes the button stay in the center, no matter what the dimensions of the screen are */
+    margin-top: 20px;
+  }
+
+  .contact-us-btn a {
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(
+      to bottom,
+      rgba(153, 153, 153, 0.3),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+
+  .contact-us-btn a:hover {
+    background: linear-gradient(
+      to bottom,
+      rgba(153, 153, 153, 0.4),
+      rgba(255, 255, 255, 0.4)
+    );
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   }
 
   .leaves-image {
@@ -845,5 +877,388 @@ body {
     font-size: 12px;
     color: #888;
     margin-top: 10px;
+  }
+}
+
+/* ------------------------DESKTOP VERSION STYLES------------------------ */
+
+@media only screen and (min-width: 1200px) {
+  /* Hamburger Menu starts here */
+
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: right;
+    margin-left: 77%;
+    position: absolute;
+    top: 6%;
+  }
+
+  .hamburger .line {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+    padding-top: 60px;
+    z-index: 1;
+  }
+
+  .menu.show {
+    /* transform: translateX(0); */
+  }
+
+  .menu a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    margin-left: 40px;
+    font-size: 18px;
+  }
+
+  .menu a:hover {
+    opacity: 0.5;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  /* Hamburger Menu ends here */
+
+  .hero-container {
+    position: relative; /* Ensure this container can be the reference point for absolute positioning */
+    /* width: 100%; */
+    height: 100vh;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 72%;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    width: 223px;
+    height: 146px;
+  }
+
+  .hero-paragraph {
+    position: absolute; /* Position this element absolutely within its relative container */
+    top: 43%;
+    left: 12%;
+    color: white;
+    font-size: 48px;
+    letter-spacing: 2.5px;
+  }
+
+  .scroll-down-icon {
+    position: absolute; /* Position this element absolutely within its relative container */
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%); /* Center the element horizontally */
+    height: 35px;
+  }
+
+  /* Our Mission section */
+
+  .our-mission,
+  .our-services-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 10px;
+  }
+
+  .our-mission-title {
+    font-size: 32px;
+    margin-left: 21px;
+    margin-top: 32px;
+    margin-bottom: 17px;
+    align-self: flex-start; /* using this so that it doesn't get affected by justify-content and align-items: center on the parent element */
+  }
+
+  .our-mission-paragraph {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    width: 47%;
+    margin-bottom: 25px;
+    margin-left: 50px;
+  }
+
+  .our-mission-paragraph-2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    width: 47%;
+    margin-bottom: 30px;
+    margin-left: 50px;
+  }
+
+  .our-mission-image {
+    height: 322px;
+    width: 547px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 10px; /* will change that later for sure */
+    position: absolute;
+    right: 100px;
+  }
+
+  .title-and-paragraph {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  /* Our Services section */
+
+  .our-services {
+    background-color: #00242e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-services-align {
+    display: flex;
+    gap: 11%;
+    width: 84%;
+  }
+
+  .our-services-title {
+    width: 100%;
+    align-self: flex-start;
+    padding-left: 121px; /* Using padding instead of margin here is best, because if I use margin, the title which takes 100% width will overflow outside of the parent element and the horizontal scroll will appear */
+    margin-top: 43px;
+    margin-bottom: 31px;
+    font-size: 32px;
+  }
+
+  .our-services p,
+  a {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .our-services,
+  a {
+    text-decoration: none;
+  }
+
+  .design-installations-title,
+  .maintenance-title,
+  .consulting-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .design-installations-paragraph,
+  .maintenance-paragraph,
+  .consulting-paragraph,
+  .service-link {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+
+  .service-links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .service-link {
+    margin-left: 3px;
+  }
+
+  .all-services {
+    margin-bottom: 39px;
+  }
+
+  /* Call-To-Action section */
+
+  .call-to-action {
+    position: relative;
+  }
+
+  .call-to-action-title {
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 32%;
+    left: 9.5%;
+    font-family: "Open sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .call-to-action-paragraph {
+    width: 22%;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 39%;
+    font-family: "Open sans", sans-serif;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .call-to-action-title-and-paragraph {
+  }
+
+  .contact-us-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 68%;
+    left: 46%;
+    margin-top: 20px;
+  }
+
+  .contact-us-btn a {
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(
+      to bottom,
+      rgba(153, 153, 153, 0.3),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+    font-size: 20px;
+  }
+
+  .contact-us-btn a:hover {
+    background: linear-gradient(
+      to bottom,
+      rgba(153, 153, 153, 0.5),
+      rgba(255, 255, 255, 0.5)
+    );
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .leaves-image {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    display: block; /* This eliminates any potential whitespace below the "leaves-image" that could be added by the browser’s default image styling */
+  }
+
+  /* Footer section */
+  .footer {
+    align-items: center;
+    justify-content: center;
+    background-color: #00242e;
+  }
+
+  .footer-logo {
+    width: 168px;
+    height: 111px;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .horizontal-line {
+    transform: rotate(90deg);
+    width: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+
+  .instagram-img,
+  .twitter-img,
+  .linkedin-img {
+    width: 15px;
+    height: 15px;
+    position: relative;
+  }
+
+  .instagram-link,
+  .twitter-link,
+  .linkedin-link {
+    font-family: "Open sans", sans-serif;
+    font-size: 13px;
+    position: absolute;
+    margin-left: 5px;
+  }
+
+  .follow-us {
+    color: white;
+    font-family: "Open sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 70%;
+    padding-left: 2px;
+    margin-bottom: 4px;
+    margin-top: 10px;
+  }
+
+  .company,
+  .our-solutions {
+    color: white;
+    font-family: "Open sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    width: 70%;
+    padding-left: 2px;
+    margin-bottom: 4px;
+    margin-top: 25px;
+  }
+
+  .socials,
+  .blog-and-news,
+  .services,
+  .about-us,
+  .international-airport,
+  .bali-solar-farm,
+  .manufacturing-plant {
+    width: 70%;
+    font-size: 13px;
+    margin-top: 9px;
+    padding-left: 3px;
+  }
+
+  .international-airport,
+  .bali-solar-farm,
+  .manufacturing-plant {
+    font-style: italic;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-family: "Open sans", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    margin-top: 90px;
   }
 }
