@@ -1119,47 +1119,39 @@ body {
   /* Call-To-Action section */
 
   .call-to-action {
-    position: relative;
-  }
-
-  .call-to-action-title {
-    width: 80%;
-    color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 32%;
-    left: 9.5%;
-    font-family: "Open sans", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px black;
-  }
-
-  .call-to-action-paragraph {
-    width: 22%;
-    color: white;
-    position: absolute;
-    top: 45%;
-    left: 39%;
-    font-family: "Open sans", sans-serif;
-    font-size: 16px;
-    text-shadow: 1px 1px 2px black;
+    align-items: center;
+    height: 300px;
+    background: url("images/leaves-image.jpg") no-repeat center center/cover;
   }
 
   .call-to-action-title-and-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .call-to-action-title {
+    font-family: "Open sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .call-to-action-paragraph {
+    font-family: "Open sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 30px;
+    width: 50%;
   }
 
   .contact-us-button {
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 68%;
-    left: 46%;
-    margin-top: 20px;
   }
 
   .contact-us-btn a {
@@ -1190,10 +1182,7 @@ body {
   }
 
   .leaves-image {
-    width: 100%;
-    object-fit: cover;
-    height: 300px;
-    display: block; /* This eliminates any potential whitespace below the "leaves-image" that could be added by the browser’s default image styling */
+    display: none; /* Hidden because we use it as a background */
   }
 
   /* Footer section */
@@ -1236,12 +1225,24 @@ body {
     margin-left: 5px;
   }
 
+  .instagram-link:hover,
+  .twitter-link:hover,
+  .linkedin-link:hover,
+  .blog-and-news:hover,
+  .services:hover,
+  .about-us:hover,
+  .international-airport:hover,
+  .bali-solar-farm:hover,
+  .manufacturing-plant:hover {
+    opacity: 0.5;
+  }
+
   .follow-us {
     color: white;
     font-family: "Open sans", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    width: 70%;
+    width: 100%;
     padding-left: 2px;
     margin-bottom: 12px;
     margin-top: 10px;
@@ -1269,7 +1270,7 @@ body {
     font-family: "Open sans", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    width: 70%;
+    width: 100%;
     padding-left: 2px;
     margin-bottom: 4px;
     margin-top: 25px;
@@ -1282,7 +1283,7 @@ body {
   .international-airport,
   .bali-solar-farm,
   .manufacturing-plant {
-    width: 70%;
+    width: 100%;
     font-size: 14px;
     margin-top: 9px;
     padding-left: 3px;
