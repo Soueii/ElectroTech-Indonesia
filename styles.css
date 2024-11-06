@@ -312,11 +312,17 @@ body {
 
   /* Footer section */
   .footer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
     align-items: center;
     justify-content: center;
     background-color: #00242e;
+  }
+
+  .logo-and-horizontal-line {
+    display: grid;
+    justify-content: center;
   }
 
   .footer-logo {
@@ -326,9 +332,24 @@ body {
   }
 
   .horizontal-line {
-    width: 70%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    width: 45%;
+    margin: 3% auto;
+  }
+
+  .socials-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .company-links {
+    display: grid;
+    justify-content: center;
+  }
+
+  .our-solutions-links {
+    display: grid;
+    justify-content: center;
   }
 
   .instagram-img,
@@ -344,7 +365,7 @@ body {
   .linkedin-link {
     font-family: "Open sans", sans-serif;
     font-size: 13px;
-    position: absolute;
+    /* position: absolute; */
     margin-left: 5px;
   }
 
@@ -353,9 +374,7 @@ body {
     font-family: "Open sans", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    width: 70%;
-    padding-left: 2px;
-    margin-bottom: 4px;
+    margin-bottom: 9px;
     margin-top: 10px;
   }
 
@@ -365,10 +384,14 @@ body {
     font-family: "Open sans", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    width: 70%;
     padding-left: 2px;
     margin-bottom: 4px;
     margin-top: 25px;
+  }
+
+  .our-solutions {
+    display: grid;
+    justify-content: center;
   }
 
   .socials,
@@ -378,7 +401,6 @@ body {
   .international-airport,
   .bali-solar-farm,
   .manufacturing-plant {
-    width: 70%;
     font-size: 13px;
     margin-top: 9px;
     padding-left: 3px;
@@ -388,6 +410,9 @@ body {
   .bali-solar-farm,
   .manufacturing-plant {
     font-style: italic;
+    width: 100%;
+    display: grid;
+    justify-content: center;
   }
 
   .copyright {
@@ -1176,27 +1201,29 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #00242e;
+    display: grid;
+    grid-template-columns: 0.1fr 0.2fr 0.3fr 0.3fr 1fr;
   }
 
   .footer-logo {
     width: 168px;
     height: 111px;
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 150px;
   }
 
   .horizontal-line {
     transform: rotate(90deg);
-    width: 15%;
-    margin-top: 3%;
+    width: 100%;
+    margin-top: 50%;
     margin-bottom: 3%;
   }
 
   .instagram-img,
   .twitter-img,
   .linkedin-img {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     position: relative;
   }
 
@@ -1204,7 +1231,7 @@ body {
   .twitter-link,
   .linkedin-link {
     font-family: "Open sans", sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     position: absolute;
     margin-left: 5px;
   }
@@ -1216,8 +1243,24 @@ body {
     font-weight: 600;
     width: 70%;
     padding-left: 2px;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
     margin-top: 10px;
+  }
+
+  .socials-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 120px;
+  }
+
+  .company-links {
+    display: grid;
+  }
+
+  .our-solutions-links {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 130px;
   }
 
   .company,
@@ -1240,7 +1283,7 @@ body {
   .bali-solar-farm,
   .manufacturing-plant {
     width: 70%;
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 9px;
     padding-left: 3px;
   }
@@ -1252,9 +1295,8 @@ body {
   }
 
   .copyright {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    grid-column: 1 / -1; /* Spans across all columns */
+    text-align: center; /* Centers the text */
     color: white;
     font-family: "Open sans", sans-serif;
     font-size: 9px;
