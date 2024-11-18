@@ -17,6 +17,8 @@ body {
     padding: 0;
   }
 
+  /* ----------------INDEX PAGE---------------- */
+
   /* Hero Section */
 
   .hero-container {
@@ -99,6 +101,38 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  /* The Menu styles exlusively for About Us mobile */
+
+  .menu-about-us {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    padding-top: 60px;
+    z-index: 1;
+  }
+
+  .menu-about-us.show {
+    transform: translateX(0);
+  }
+
+  .menu-about-us a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid #555;
+  }
+
+  .menu-about-us a:hover {
+    opacity: 0.5;
   }
 
   /* Hamburger Menu ends here */
@@ -547,6 +581,17 @@ body {
     font-size: 28px;
     font-weight: 400;
     margin: 1.8rem 0;
+  }
+
+  .ceo-image,
+  .cto-image,
+  .head-of-energy-image {
+    height: 420px;
+  }
+
+  .cto-image {
+    object-fit: cover;
+    width: 280px;
   }
 
   .ceo-name,
@@ -1303,5 +1348,182 @@ body {
     font-size: 9px;
     font-weight: 700;
     margin-top: 90px;
+  }
+
+  /* ---------------------ABOUT US PAGE--------------------- */
+
+  .logo-about-us {
+    content: url("images/Logo/png/logo-no-background-black.png"); /* This changes the logo image only for Desktop version without changing the HTML */
+    position: absolute;
+    top: 20px;
+    left: 70px;
+  }
+
+  .hero-img-about-us {
+    width: 100%;
+    height: 100vh;
+    border-radius: 28px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .headings {
+    height: 316px;
+    width: 550px;
+    position: absolute;
+    top: 49%;
+    margin-left: 250px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(
+      to bottom,
+      rgba(153, 153, 153, 0.3),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(10px);
+  }
+
+  .headings > .hero-small-heading {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+  }
+
+  .hero-big-heading {
+    font-size: 48px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .hero-small-heading,
+  .hero-big-heading {
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  /* Menu for About Us page */
+
+  .menu-about-us {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+    padding-top: 60px;
+    z-index: 1;
+  }
+
+  .menu-about-us a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    margin-left: 40px;
+    font-size: 18px;
+  }
+
+  .menu-about-us a:hover {
+    opacity: 0.5;
+  }
+
+  /* Menu for About Us page ENDS HERE */
+
+  .history-heading,
+  .leadership-heading {
+    font-size: 36px;
+    font-weight: 400;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .history-milestones,
+  .history-paragraph,
+  .history-years > li {
+    font-size: 18px;
+  }
+
+  .history-paragraph,
+  .history-milestones {
+    margin: 40px 60px 20px 60px;
+  }
+
+  .bold-years {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .bold-years::after {
+    content: "\A"; /* Creates a line-break */
+    white-space: pre;
+  }
+
+  .history-years > li {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 25px;
+  }
+
+  .bold-years-last {
+    margin-bottom: 50px;
+  }
+
+  .leadership-section {
+    background-color: #00242e;
+    color: white;
+  }
+
+  .leadership-contents {
+    display: flex;
+  }
+
+  .ceo-image,
+  .cto-image,
+  .head-of-energy-image {
+    height: 404px;
+  }
+
+  .cto-image {
+    width: 287px;
+    object-fit: cover;
+  }
+
+  .ceo-card,
+  .cto-card,
+  .head-of-energy-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ceo-name,
+  .cto-name,
+  .head-of-energy-name {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  .ceo-position,
+  .cto-position,
+  .head-of-energy-position {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 15px 0;
+  }
+
+  .ceo-paragraph,
+  .cto-paragraph,
+  .head-of-energy-paragraph {
+    font-size: 16px;
+    width: 70%;
   }
 }
