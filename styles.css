@@ -1526,4 +1526,37 @@ body {
     font-size: 16px;
     width: 70%;
   }
+
+  .leadership-section {
+    padding-bottom: 350px;
+  }
+
+  .leadership-heading {
+    padding: 40px 0;
+  }
+
+  .quote-card {
+    position: absolute;
+    top: 260%;
+    width: 30%;
+    word-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 37%;
+    font-style: italic;
+  }
+
+  .quote-image {
+    height: 50px;
+  }
+
+  .about-us-horizontal-line {
+    display: none;
+  }
+
+  .last-horizontal-line {
+    position: absolute;
+    top: 277%;
+    width: 100%;
+  }
 }
