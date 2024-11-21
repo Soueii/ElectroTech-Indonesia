@@ -1483,10 +1483,12 @@ body {
   .leadership-section {
     background-color: #00242e;
     color: white;
+    padding-bottom: 350px;
   }
 
   .leadership-contents {
     display: flex;
+    position: relative;
   }
 
   .ceo-image,
@@ -1530,17 +1532,13 @@ body {
     width: 70%;
   }
 
-  .leadership-section {
-    padding-bottom: 350px;
-  }
-
   .leadership-heading {
     padding: 40px 0;
   }
 
   .quote-card {
     position: absolute;
-    top: 260%;
+    top: 115%;
     width: 30%;
     word-spacing: 3px;
     display: flex;
