@@ -660,6 +660,7 @@ body {
 
   .service-images {
     height: 240px;
+    width: 350px;
     border-radius: 13px;
     object-fit: cover;
   }
@@ -709,6 +710,8 @@ body {
     margin-bottom: 20px;
     opacity: 1;
   }
+
+  /* Accordion ends */
 
   h4 {
     color: #fff;
@@ -1558,5 +1561,117 @@ body {
     position: absolute;
     top: 277%;
     width: 100%;
+  }
+
+  /* ---------------------------Services Page--------------------------- */
+
+  .services-heading {
+    height: 440px;
+  }
+
+  .hero-img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .service-images {
+    height: 463px;
+    width: 978px;
+    margin-left: 114px;
+    object-fit: cover;
+    border-radius: 13px;
+    margin-bottom: 25px;
+  }
+
+  .automation-image {
+    height: 389px;
+    width: 978px;
+  }
+
+  .our-services-heading {
+    font-size: 36px;
+    margin-top: 32px;
+    margin-bottom: 17px;
+    margin-left: 73px;
+  }
+
+  .design-and-installations-card,
+  .maintenance-card,
+  .consulting-card,
+  .renewable-energy-card,
+  .automation-control-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Accordion */
+
+  .accordion {
+    width: 50%;
+    max-width: none;
+    overflow: hidden;
+    margin-top: 20px;
+    background-color: #00242e;
+    border-radius: 16px;
+  }
+
+  .accordion__intro {
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .accordion__content {
+    font-size: 13px;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.25s ease-out;
+    color: #f1f1f1;
+    opacity: 0;
+  }
+
+  .accordion__active .accordion__content {
+    padding: 0 20px 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+
+  /* Accordion ends */
+
+  .link-service {
+    color: black;
+  }
+
+  .the-services {
+    margin-top: 10px;
+    align-self: flex-start;
+    margin-left: 25%;
+  }
+
+  .service-name {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 5px;
+    align-self: flex-start;
+    margin-left: 25%;
+  }
+
+  .service-paragraph {
+    width: 50%;
+  }
+
+  .card-content-services {
+    width: 70%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
