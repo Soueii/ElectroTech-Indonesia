@@ -992,7 +992,6 @@ body {
   }
 
   .menu a {
-    color: black;
     text-decoration: none;
     padding: 15px;
     color: white;
@@ -1150,6 +1149,10 @@ body {
     margin-top: 0px;
   }
 
+  .service-link:hover {
+    opacity: 0.5;
+  }
+
   .service-links {
     display: flex;
     align-items: center;
@@ -1218,6 +1221,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background 0.3s, box-shadow 0.3s;
     font-size: 20px;
+    text-shadow: 1px 1px 2px black;
   }
 
   .contact-us-btn a:hover {
@@ -1428,7 +1432,6 @@ body {
     color: black;
     text-decoration: none;
     padding: 15px;
-    color: black;
     margin-left: 40px;
     font-size: 18px;
   }
@@ -1582,6 +1585,7 @@ body {
   .service-images {
     height: 463px;
     width: 978px;
+    min-width: 694px;
     margin-left: 114px;
     object-fit: cover;
     border-radius: 13px;
@@ -1651,6 +1655,10 @@ body {
     color: black;
   }
 
+  .link-service:hover {
+    opacity: 0.5;
+  }
+
   .the-services {
     margin-top: 10px;
     align-self: flex-start;
@@ -1672,10 +1680,68 @@ body {
 
   .card-content-services {
     width: 70%;
+    min-width: 50%;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  /* ---------------------------Projects Page--------------------------- */
+
+  .hero-img-projects {
+    object-fit: cover;
+    object-position: 1% 5%;
+  }
+
+  .menu-projects > a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 40px;
+    font-size: 18px;
+  }
+
+  .headings-projects {
+    height: 430px;
+  }
+
+  .our-projects-heading,
+  .our-client-testimonials {
+    font-size: 36px;
+    text-align: center;
+    margin: 22px 0;
+  }
+
+  .client-one {
+    height: 85px;
+    width: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .client-quote-1,
+  .client-quote-2 {
+    height: 15px;
+    width: 15px;
+  }
+
+  .all-client-testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    row-gap: 60px;
+  }
+
+  .first-testimonial,
+  .second-testimonial,
+  .third-testimonial {
+    justify-items: center;
+  }
+
+  .client-quote-2 {
+    display: flex;
+    justify-content: flex-end;
   }
 }

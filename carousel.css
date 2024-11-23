@@ -133,3 +133,13 @@ iframe {
   transform: scale(1.5);
   background-color: var(--carousel-pagination-btn-active-bg);
 }
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --carousel-height: 650px;
+  }
+
+  .slide img {
+    height: 100%;
+  }
+}
