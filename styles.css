@@ -1483,31 +1483,42 @@ body {
   .leadership-section {
     background-color: #00242e;
     color: white;
-    padding-bottom: 350px;
+    padding: 40px 0;
   }
 
   .leadership-contents {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 0.02fr 1fr 0.02fr 1fr;
+    gap: 20px;
+    row-gap: 60px;
+  }
+
+  .cto-card {
+    grid-column: 3 / 3;
+  }
+
+  .head-of-energy-card {
+    grid-column: 5 / 5;
+  }
+
+  .ceo-card,
+  .cto-card,
+  .head-of-energy-card,
+  .quote-card {
     display: flex;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .ceo-image,
   .cto-image,
   .head-of-energy-image {
-    height: 404px;
-  }
-
-  .cto-image {
-    width: 287px;
+    width: 100%;
+    height: 500px;
     object-fit: cover;
-  }
-
-  .ceo-card,
-  .cto-card,
-  .head-of-energy-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 300px;
   }
 
   .ceo-name,
@@ -1522,43 +1533,38 @@ body {
   .head-of-energy-position {
     font-size: 18px;
     font-weight: bold;
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
   }
 
   .ceo-paragraph,
   .cto-paragraph,
   .head-of-energy-paragraph {
+    width: 88%;
     font-size: 16px;
-    width: 70%;
-  }
-
-  .leadership-heading {
-    padding: 40px 0;
+    padding: 0 20px;
   }
 
   .quote-card {
-    position: absolute;
-    top: 115%;
-    width: 30%;
-    word-spacing: 3px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 37%;
+    grid-column: 3 / 3;
+    margin-top: 20px;
     font-style: italic;
   }
 
   .quote-image {
     height: 50px;
+    margin-bottom: 20px;
   }
 
-  .about-us-horizontal-line {
+  hr.quote-horizontal-line {
+    border: none;
+    border-top: 1px solid white;
+    margin: 20px 0;
+  }
+
+  .about-us-horizontal-line,
+  .horizontal-line-1,
+  .horizontal-line-2 {
     display: none;
-  }
-
-  .last-horizontal-line {
-    position: absolute;
-    top: 277%;
-    width: 100%;
   }
 
   /* ---------------------------Services Page--------------------------- */
