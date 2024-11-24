@@ -913,6 +913,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 15px;
   }
 
   .card {
@@ -929,10 +930,6 @@ body {
     width: 100%;
     height: 320px;
     object-fit: cover;
-  }
-
-  .card-content {
-    padding: 15px;
   }
 
   .card-title {
@@ -1873,5 +1870,72 @@ body {
   .office-location-text {
     margin-top: 20px;
     font-weight: 700;
+  }
+
+  /* ---------------------------Blog and News Page--------------------------- */
+
+  .hero-blog-and-news {
+    height: 700px;
+    background-color: #00242e;
+  }
+
+  .blog-and-news-heading {
+    height: 700px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .card-content {
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .card {
+    width: 460px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+
+  .card-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin: 5px 0 10px;
+    max-height: 46px;
+    overflow: hidden;
+  }
+
+  .card-date {
+    width: 100%;
+    text-align: right;
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
   }
 }
