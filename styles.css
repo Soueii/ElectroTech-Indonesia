@@ -1730,8 +1730,9 @@ body {
   .all-client-testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 40px;
     row-gap: 60px;
+    padding: 20px 50px 50px 50px;
   }
 
   .first-testimonial,
@@ -1740,8 +1741,43 @@ body {
     justify-items: center;
   }
 
-  .client-quote-2 {
+  .client-name {
+    font-size: 17px;
+  }
+
+  .client-title {
+    margin-top: 7px;
+    width: 100%; /* Changed to 100% for better alignment */
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .client-paragraph {
+    margin-top: 7px;
+    font-style: italic;
+  }
+
+  .quote-container {
     display: flex;
-    justify-content: flex-end;
+    padding: 0 20px;
+  }
+
+  .client-quote-1,
+  .client-quote-2 {
+    margin-right: 10px;
+  }
+
+  .client-quote-2 {
+    align-self: flex-end;
+    margin-left: 9px;
+  }
+
+  .client-paragraph {
+    flex: 1;
+    text-align: center;
+  }
+
+  .footer-projects {
+    grid-template-columns: 0.4fr 0.2fr 0.3fr 0.3fr 1fr;
   }
 }
