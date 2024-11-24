@@ -819,7 +819,14 @@ body {
     text-align: center;
   }
 
-  /* Center the form container in the middle of the screen */
+  .headings-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    margin-top: 10rem;
+  }
+
   .form-container {
     display: flex;
     justify-content: center;
@@ -827,7 +834,6 @@ body {
     margin-top: 1rem;
   }
 
-  /* Style the form to make inputs stack vertically and center-align */
   .form {
     display: flex;
     flex-direction: column;
@@ -837,7 +843,6 @@ body {
     padding: 5px 20px 20px 20px;
   }
 
-  /* Style each input field and the submit button */
   .form input[type="text"],
   .form input[type="email"],
   .form textarea,
@@ -849,6 +854,8 @@ body {
     border: 1px solid #000;
     border-radius: 13px;
     box-sizing: border-box;
+    max-width: 360px;
+    min-width: 360px;
   }
 
   .form input[type="submit"] {
@@ -1747,7 +1754,7 @@ body {
 
   .client-title {
     margin-top: 7px;
-    width: 100%; /* Changed to 100% for better alignment */
+    width: 100%;
     text-align: center;
     font-size: 13px;
   }
@@ -1755,11 +1762,13 @@ body {
   .client-paragraph {
     margin-top: 7px;
     font-style: italic;
+    text-align: center;
   }
 
   .quote-container {
     display: flex;
     padding: 0 20px;
+    margin-top: 10px;
   }
 
   .client-quote-1,
@@ -1772,12 +1781,97 @@ body {
     margin-left: 9px;
   }
 
-  .client-paragraph {
-    flex: 1;
-    text-align: center;
-  }
-
   .footer-projects {
     grid-template-columns: 0.4fr 0.2fr 0.3fr 0.3fr 1fr;
+  }
+
+  /* ---------------------------Contact us Page--------------------------- */
+
+  .hero-contact-us {
+    height: 500px;
+    background-color: #00242e;
+  }
+
+  .headings-contact-us {
+    height: 500px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+  }
+
+  .contact-us {
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 5px 20px 20px 20px;
+  }
+
+  .form input[type="text"],
+  .form input[type="email"],
+  .form textarea,
+  .form input[type="submit"] {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 20px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    border-radius: 13px;
+    box-sizing: border-box;
+    max-width: 360px;
+    min-width: 360px;
+  }
+
+  .form textarea {
+    min-height: 200px;
+  }
+
+  .form input[type="submit"] {
+    padding: 12px;
+  }
+
+  .form input[type="submit"] {
+    background-color: #1f3144;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .contact-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .map-container {
+    margin-top: 20px;
+  }
+
+  .office-location-text {
+    margin-top: 20px;
+    font-weight: 700;
   }
 }

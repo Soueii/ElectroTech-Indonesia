@@ -13,7 +13,7 @@
     <title>Contact page</title>
   </head>
   <body>
-    <div class="hero">
+    <div class="hero hero-contact-us">
       <div class="main-menu-container">
         <a href="index.html">
           <img
@@ -43,7 +43,7 @@
       <!-- Hamburger menu END -->
 
       <div class="text-and-image">
-        <div class="headings">
+        <div class="headings-mobile headings-contact-us">
           <p class="hero-small-heading">Contact us</p>
           <div class="empty-space"></div>
           <p class="hero-big-heading">We're here for you</p>
@@ -52,61 +52,67 @@
     </div>
 
     <!-- Form -->
-    <p class="contact-us">Contact us</p>
+    <div class="contact-form-container">
+      <div class="heading-and-form-container">
+        <p class="contact-us">Contact us</p>
 
-    <div class="form-container">
-      <form action="/check" method="POST" class="form">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter name"
-          required
-        />
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="E-mail"
-          required
-        />
-        <textarea
-          name="comment"
-          form="usrform"
-          placeholder="Message"
-        ></textarea>
-        <input type="submit" value="Contact us" />
-      </form>
-    </div>
+        <div class="form-container">
+          <form action="/check" method="POST" class="form">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter name"
+              required
+            />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+            <textarea
+              name="comment"
+              form="usrform"
+              placeholder="Message"
+            ></textarea>
+            <input type="submit" value="Contact us" />
+          </form>
+        </div>
+      </div>
 
-    <div class="address">
-      <p class="office-location-text">Office location</p>
-      <address>
-        Jl. Jend. Sudirman No. 23,
-        <br />
-        Kawasan Mega Kuningan,
-        <br />
-        Jakarta Selatan, 12950,
-        <br />
-        Indonesia
-      </address>
-      <br />
-      <p>+62 21 1234 5678</p>
-      <a href="mailto:info@electrotech.co.id" class="email">
-        info@electrotech.co.id
-      </a>
-    </div>
+      <div class="address-and-map">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.79800973034367!2d106.82113935757198!3d-6.212971032421646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f401700d76d7%3A0x210af30e69e19785!2sJl.%20Jenderal%20Sudirman%20No.23%2C%20RT.12%2FRW.1%2C%20Kuningan%2C%20Karet%20Kuningan%2C%20Kecamatan%20Setiabudi%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012920%2C%20Indonesia!5e0!3m2!1sen!2sbg!4v1730037903776!5m2!1sen!2sbg"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
 
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.79800973034367!2d106.82113935757198!3d-6.212971032421646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f401700d76d7%3A0x210af30e69e19785!2sJl.%20Jenderal%20Sudirman%20No.23%2C%20RT.12%2FRW.1%2C%20Kuningan%2C%20Karet%20Kuningan%2C%20Kecamatan%20Setiabudi%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012920%2C%20Indonesia!5e0!3m2!1sen!2sbg!4v1730037903776!5m2!1sen!2sbg"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+        <div class="address">
+          <p class="office-location-text">Office location</p>
+          <address>
+            Jl. Jend. Sudirman No. 23,
+            <br />
+            Kawasan Mega Kuningan,
+            <br />
+            Jakarta Selatan, 12950,
+            <br />
+            Indonesia
+          </address>
+          <br />
+          <p>+62 21 1234 5678</p>
+          <a href="mailto:info@electrotech.co.id" class="email">
+            info@electrotech.co.id
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
